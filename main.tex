@@ -1,6 +1,8 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
-
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{blindtext}
 \title{Nociones de la memoria del computador}
 \author{ARNEL DAVID BRAVO TOBON  }
 \date{September 2020}
@@ -508,16 +510,48 @@ Centro de Control de Memoria).
 La memoria se encuentra conectada con su controlador a través del bus, que no es otra cosa
 más que una serie de pistas de cobre (que actúan como cables) impresas en la placa madre o
 motherboard, por las cuales se transporta la información. Dicho bus se divide en tres
-subgrupos: data bus (bus de datos), address bus (bus de direcciones) y control bus (bus de
-control).\\[0.1cm]
+subgrupos: data bus (bus de datos), address bus (bus de direcciones) y control bus (bus decontrol).\\[0.1cm]
 A través del bus de datos, compuesto por 64 pistas paralelas, se transporta toda la información
-de a un bit por pista, logrando transmitir de a 64 bits simultáneos, de la memoria a su
-controlador y vice versa.\\[0.1cm]
-A través del bus de direcciones se envía la dirección de memoria (posición en la matriz) donde
-se encuentra la información que se quiere leer o donde se va a escribir.\\[0.1cm]
-A través del bus de control se envían los comandos o instrucciones de acciones a ejecutar en
-memoria como por ejemplo escritura, lectura u otras operaciones. Otro de los aspectos más
-importantes del bus de control es lo que se denomina clock signal(señal de reloj), que establece
-la frecuencia o ritmo de trabajo en la que se comunican ambos dispositivos.
+de a un bit por pista, logrando transmitir de a 64 bits simultáneos, de la memoria a su controlador y vice versa.\\[0.1cm]
+A través del bus de direcciones se envía la dirección de memoria (posición en la matriz) dondese encuentra la información que se quiere leer o donde se va a escribir.\\[0.1cm]
+A través del bus de control se envían los comandos o instrucciones de acciones a ejecutar en memoria como por ejemplo escritura, lectura u otras operaciones. Otro de los aspectos más importantes del bus de control es lo que se denomina clock signal(señal de reloj), que establece la frecuencia o ritmo de trabajo en la que se comunican ambos dispositivos.
+\section*{Solucion del cuestionario}
+1) Defina que es la memoria del computador.\\[0.1cm]
+La memoria cumple un papel muy importante en el computador y su funcionamiento,
+ya que se trata del dispositivo donde se almacena temporalmente
+toda la información con la que trabajan los microprocesadores para procesarla
+y devolver los resultados que los usuarios requieren.\\[0.5cm]
+2) Mencione los tipos de memoria que conoce y haga una pequeña descripción de cada tipo.\\[0.1cm]
+\subsection*{Memoria portatiles USB}
+es un tipo de dispositivo de almacenamiento de datos que utiliza circuitos de estado sólido para guardar datos e información.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\textwidth]{usb.jpg}
+    \caption{imagen usb}
+    \label{fig:my_label}
+\end{figure}
+\subsection*{Memoria RAM(Memoria de Acceso Aleatorio}
+es uno de los componentes mas importantes de cualquier equipo de computo, Su función principal es almacenar datos e instrucciones para que puedan ser accedidos por otros componentes básicos, de manera que evita que tengan que volver a pasar por el procesador o incluso por la tarjeta gráfica.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\textwidth]{ram.jpg}
+    \caption{imagen ram}
+    \label{fig:my_label}
+\end{figure}
+\subsection*{Memoria ROM(Memoria de solo lectura}
+es el medio de almacenamiento de programas o datos que permiten el buen funcionamiento de los ordenadores o dispositivos electrónicos a través de la lectura de la información sin que pueda ser destruida o reprogramable.
+
+3) Describa como se gestiona la memoria de un computador.\\[0.1cm]
+Los lenguajes de programación actuales generalmente asumen la existencia de únicamente dos niveles de memoria: memoria primaria y memoria secundaria (normalmente en disco). En lenguaje ensamblador, ensamblador en línea, y lenguajes como C y C++, se pueden direccionar datos directamente a los registros de la CPU.
+Para aprovechar de forma óptima las ventajas de la jerarquía de memoria es necesaria la cooperación entre programadores, compiladores y fabricantes de hardware:
+Programadores: deben ser responsables del movimiento entre memoria principal y disco mediante el uso de ficheros.
+Hardware: el movimiento de datos entre la memoria principal y los niveles de caché es realizado por algoritmos de hardware.
+Compiladores: son responsables de optimizar el código de modo que el uso de los registros y la caché sea eficiente.\\[0.1cm]
+
+4)¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?
+lo que mide que una memoria sea mas rapida que otra es su latencia ya que una memoria con una  latencia baja va a ocacionar que el dispositivo reacione mas rapido, a diferencia  cuando la  memoria tiene una latencia alta ya que el dispositivo se demora mas tiempo en responder
+
+
+
 
 \end{document}
