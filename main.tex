@@ -3,13 +3,24 @@
 \usepackage{graphicx}
 \graphicspath{ {images/} }
 \usepackage{blindtext}
-\title{Nociones de la memoria del computador}
-\author{ARNEL DAVID BRAVO TOBON  }
-\date{September 2020}
-
 \begin{document}
+\begin{titlepage}
+{\includegraphics[width=0.2\textwidth]{udea.png}\par}
+\vspace{1cm}
+\centering
+{\bfseries\LARGE Universidad de antioquia \par}
+\vspace{1cm}
+{\scshape\Large Facultad de Ingenieria \par}
+\vspace{3cm}
+{\scshape\Huge Nociones de la memoria del computador \par}
+\vspace{3cm}
+\vfill
+{\Large Autor: \par}
+{\Large arnel david bravo tobon  \par}
+\vfill
+{\Large septiembre 2020 \par}
+\end{titlepage}
 
-\maketitle
 \section*{Resumen}
 En este documento se hablará de los tipos de memorias que podemos encontrar en un computador, podremos ver que hay memorias temporales donde estas tienen gran importancia para que los procesos se realicen de una manera más eficiente , de solo lectura donde se encuentran las instrucciones de la máquina y se compone por la BIOS y el setup que son esenciales para el funcionamiento del computador y las memorias para almacenar datos que son tan importantes en nuestra vida cotidiana. 
 
@@ -516,12 +527,9 @@ de a un bit por pista, logrando transmitir de a 64 bits simultáneos, de la memo
 A través del bus de direcciones se envía la dirección de memoria (posición en la matriz) dondese encuentra la información que se quiere leer o donde se va a escribir.\\[0.1cm]
 A través del bus de control se envían los comandos o instrucciones de acciones a ejecutar en memoria como por ejemplo escritura, lectura u otras operaciones. Otro de los aspectos más importantes del bus de control es lo que se denomina clock signal(señal de reloj), que establece la frecuencia o ritmo de trabajo en la que se comunican ambos dispositivos.
 \section*{Solucion del cuestionario}
-1) Defina que es la memoria del computador.\\[0.1cm]
-La memoria cumple un papel muy importante en el computador y su funcionamiento,
-ya que se trata del dispositivo donde se almacena temporalmente
-toda la información con la que trabajan los microprocesadores para procesarla
-y devolver los resultados que los usuarios requieren.\\[0.5cm]
-2) Mencione los tipos de memoria que conoce y haga una pequeña descripción de cada tipo.\\[0.1cm]
+\subsection*{1) Defina que es la memoria del computador.}
+La memoria cumple un papel muy importante en el computador y su funcionamiento, ya que se trata del dispositivo donde se almacena temporalmente toda la información con la que trabajan los microprocesadores para procesarla y devolver los resultados que los usuarios requieren.\\[0.5cm]
+ \subsection*{2) Mencione los tipos de memoria que conoce y haga una pequeña descripción de cada tipo.}
 \subsection*{Memoria portatiles USB}
 es un tipo de dispositivo de almacenamiento de datos que utiliza circuitos de estado sólido para guardar datos e información.
 \begin{figure}[h!]
@@ -531,25 +539,41 @@ es un tipo de dispositivo de almacenamiento de datos que utiliza circuitos de es
     \label{fig:my_label}
 \end{figure}
 \subsection*{Memoria RAM(Memoria de Acceso Aleatorio}
-es uno de los componentes mas importantes de cualquier equipo de computo, Su función principal es almacenar datos e instrucciones para que puedan ser accedidos por otros componentes básicos, de manera que evita que tengan que volver a pasar por el procesador o incluso por la tarjeta gráfica.
-\begin{figure}[h!]
+es uno de los componentes mas importantes de cualquier equipo de computo, Su función principal es almacenar datos e instrucciones para que puedan ser accedidos por otros componentes básicos, de manera que evita que tengan que volver a pasar por el procesador o incluso por la tarjeta gráfica.\\[2cm]
+\begin{figure}[!]
     \centering
     \includegraphics[width=0.75\textwidth]{ram.jpg}
     \caption{imagen ram}
     \label{fig:my_label}
 \end{figure}
-\subsection*{Memoria ROM(Memoria de solo lectura}
-es el medio de almacenamiento de programas o datos que permiten el buen funcionamiento de los ordenadores o dispositivos electrónicos a través de la lectura de la información sin que pueda ser destruida o reprogramable.
+\subsection*{Memoria ROM(Memoria de solo lectura)}
+Es el medio de almacenamiento de programas o datos que permiten el buen funcionamiento de los ordenadores o dispositivos electrónicos a través de la lectura de la información sin que pueda ser destruida o reprogramable.\\[0.1cm]
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{rom.jpg}
+    \caption{imagen ROM}
+    \label{fig:my_label}
+\end{figure}
+\subsection*{Disco Duro}
+Es un dispositivo de almacenamiento de datos que emplea un sistema de grabación magnética para almacenar y recuperar archivos digitales.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{disco.jpg}
+    \caption{disco duro}
+    \label{fig:my_label}
+\end{figure}
+\subsection*{3) Describa como se gestiona la memoria de un computador.}
+De la gestion en el computador se encarga el procesador en cierta parte, aunque mayormente es gracias al administrador de memoria presente en los sistemas operativos y su labor consiste en llevar un registro de las partes de memoria que se estén utilizando y aquellas que no, con el fin de asignar espacio en memoria a los procesos cuando éstos la necesiten y liberándola cuando terminen. Así mismo sabe que información necesita ser cargada en RAM y cual no, y lo mismo para los otros tipos de memorias presentes como cache, vram, etc.
+¿para qué sirve?
+Para optimizar el espacio y poder cargar o intercambiar los programas que van a hacer ejecutados del disco duro a la memoria principal. Llevar un registro de las partes de la memoria que están en uso y de las que no. Si detecta que hay una parte que ya no está en uso, la libera para poder asignarla a los procesos que la necesiten. Facilitar un espacio de memoria para cada proceso y controlar que ninguno de ellos trabaje en zonas de memoria que no le han sido asignados. A el intercambio entre la memoria principal y el disco en los casos en los que la memoria principal no le pueda dar capacidad a todos los procesos que tienen necesidad de ella.\\[0.1cm]
+\subsection*{4)¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?}
+Lo que hace que una memoria sea más rápida que otra, radica en la forma en que se construye (funcionalidad), la velocidad de acceder a los datos, la capacidad, además de la velocidad de escritura y lectura. Esto permite crear memorias con un único propósito, a lo cual sería más eficiente (mas rápida), más fácil de crear en masa, de costo más bajo, mejor comunicación, entre otros muchos beneficios.
 
-3) Describa como se gestiona la memoria de un computador.\\[0.1cm]
-Los lenguajes de programación actuales generalmente asumen la existencia de únicamente dos niveles de memoria: memoria primaria y memoria secundaria (normalmente en disco). En lenguaje ensamblador, ensamblador en línea, y lenguajes como C y C++, se pueden direccionar datos directamente a los registros de la CPU.
-Para aprovechar de forma óptima las ventajas de la jerarquía de memoria es necesaria la cooperación entre programadores, compiladores y fabricantes de hardware:
-Programadores: deben ser responsables del movimiento entre memoria principal y disco mediante el uso de ficheros.
-Hardware: el movimiento de datos entre la memoria principal y los niveles de caché es realizado por algoritmos de hardware.
-Compiladores: son responsables de optimizar el código de modo que el uso de los registros y la caché sea eficiente.\\[0.1cm]
 
-4)¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?
-lo que mide que una memoria sea mas rapida que otra es su latencia ya que una memoria con una  latencia baja va a ocacionar que el dispositivo reacione mas rapido, a diferencia  cuando la  memoria tiene una latencia alta ya que el dispositivo se demora mas tiempo en responder
+
+
+
+
 
 
 
